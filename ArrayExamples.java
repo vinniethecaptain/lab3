@@ -8,6 +8,7 @@ public class ArrayExamples {
     for (int i = 0, j = arr.length - 1; j >= 0; i++, j--) {
       reversedArr[i] = arr[j];
     }
+
     for (int i = 0; i < arr.length; i++) {
       arr[i] = reversedArr[i];
     }
@@ -21,6 +22,11 @@ public class ArrayExamples {
       newArray[i] = arr[arr.length - i - 1];
     }
     return arr;
+  }
+
+  public static void main(String args[]) {
+    double[] test = {1,3,3};
+    System.out.println(ArrayExamples.averageWithoutLowest(test));
   }
 
   // Averages the numbers in the array (takes the mean), but leaves out the
